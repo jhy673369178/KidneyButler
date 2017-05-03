@@ -4,10 +4,20 @@
   <div  style="position: absolute;top: 43px;z-index:100;display: block;height: 2.5px;background-color: #33cd5f;{{barwidth}}" ></div>
     <ion-content style="">
 
-   		 <ion-item style="border:none; text-align:center" >
+   		<!-- <ion-item style="border:none; text-align:center" >
          <img ng-src="{{myAvatar}}" name="Photo" ng-click="onClickCamera($event)" style="border-radius:50%; height:30%; width:30%" />
-    	</ion-item>
-
+    	</ion-item>-->
+      <div class="me-top-box">
+        <div class="me-top-bg"></div>
+        <div class="me-massage-box">
+          <div class="me-avatar-box" >
+            <div class="img-cen me-avatar">
+                <img ng-src="img/alert.png"
+                     src="img/alert.png">
+            </div>
+          </a>
+        </div>
+      </div>
     <!-- 上传照片的弹出框 -->
     	<script id="my-popover.html" type="text/ng-template">
       	<ion-popover-view>
@@ -33,7 +43,7 @@
     <!-- 上传照片的弹出框 -->
 
 
-     <div class="content has-header ionic-pseudo">
+     <div class="content  ionic-pseudo">
 
       <div class="list">
       	<a class="item item-icon-left item-icon-right" ng-click="GoUserDetail()">

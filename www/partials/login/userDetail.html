@@ -1,19 +1,16 @@
 <ion-view title="个人信息" >
 
-   <ion-nav-bar class="bar-dark nav-title-slide-ios7 green-bg" style="" >
-        <ion-nav-buttons class="bar-dark nav-title-slide-ios7" side="left">
-            <button class="button button-clear"  ng-if="CanBack()" ng-click="Goback()"><i class="icon ion-chevron-left"></i>返回</button>
-        </ion-nav-buttons>
-        <ion-nav-buttons class="bar-dark nav-title-slide-ios7" side="right">
-            <button class="button button-clear"  ng-if="!canEdit"  ng-click="edit() "><i class="icon ion-edit"></i></button>
-        </ion-nav-buttons>
-    </ion-nav-bar>
+  <ion-nav-bar class="bar-positive green-bg" align-title="center">
+    <ion-nav-buttons side="left">
+      <button class="button button-icon icon ion-ios-arrow-left fc-ff" ng-click="$ionicGoBack()"></button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
 
 
   <div  style="position: absolute;top: 43px;z-index:100;display: block;height: 2.5px;background-color: #33cd5f;{{barwidth}}" ></div>
         <ion-content padding="true" style="">
             <div ng-if="canEdit">
-                <div  class="list">
+                <div  class="list m-info">
                     <label class="item item-input">
                         <span class="input-label"><i class="icon ion-asterisk" style="color:red;font-size:6px"></i>姓名</span>
                         <input  ng-model="User.name"  type="text" style="width:100%;text-align: right;">
@@ -91,7 +88,7 @@
                       </label>
                 </div>
 
-                <div>
+                <div class="m-info">
                     <span class="input-label" style="margin-left:6px "><i class="icon ion-clipboard" style="margin-right:3px;font-size:20px" ></i>最近就诊信息</span>
                     <label class="item item-input">
                         <span class="input-label" style="margin-left:8px ">就诊医院</span>
@@ -116,7 +113,7 @@
             </div>
 
             <div ng-if="!canEdit">
-                <div  class="list">
+                <div  class="list m-info">
                     <label class="item item-input">
                         <span class="input-label"><i class="icon ion-asterisk" style="color:red;font-size:6px"></i>姓名</span>
                         <p style="text-align:right;width:50%">{{User.name}}</p>
@@ -188,7 +185,7 @@
 
                 </div>
 
-                <div>
+                <div class="m-info">
                     <span class="input-label" style="margin-left:6px "><i class="icon ion-clipboard" style="margin-right:3px;font-size:20px" ></i>最近就诊信息</span>
                     <label class="item item-input">
                         <span class="input-label" style="margin-left:8px ">就诊医院</span>

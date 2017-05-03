@@ -1,29 +1,34 @@
 <ion-view cache-view="false" title="咨询记录" >
 
-  <ion-nav-bar class="bar-dark nav-title-slide-ios7 green-bg" style="" >
-      <ion-nav-buttons class="bar-dark nav-title-slide-ios7" side="left" >
-         <button class="button button-clear"  ng-click="Goback()"><i class="icon ion-chevron-left"></i>返回</button>
-      </ion-nav-buttons>
-    </ion-nav-bar>
+  <ion-nav-bar class="bar-positive green-bg" align-title="center">
+    <ion-nav-buttons side="left">
+      <button class="button button-icon icon ion-ios-arrow-left fc-ff" ng-click="$ionicGoBack()"></button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
 
 
   <div  style="position: absolute;top: 43px;z-index:100;display: block;height: 2.5px;background-color: #33cd5f;{{barwidth}}" ></div>
   <ion-content style="">
 
     <ion-list>
-      <a class="item item-avatar context-pading" href="#">
-        <img class="avatar-icon" src="/img/avatar.png">
-        <div><span>张三</span><span style="float: right">2017-04-23</span></div>
-        <em class="m-em">病情描述:下午做了拔牙手术，现在好疼怎么办办办</em>
-      </a>
+      <ion-item class="item item-avatar context-pading"  ng-repeat="item in items">
+        <img class="avatar-icon" ng-src="{{item.img || 'img/doctor3.PNG'}}">
+        <div><span>{{item.name}}</span>
+        <span class="f-fr">
+        {{item.time}}</span>
+        </div>
+        <p class="m-em" style="font-size: 14px">
+          {{item.response}}
+        </p>
+      </ion-item>
 
 
-      <ion-item ng-repeat="item in items" class="item-thumbnail-left item-text-wrap" ng-click="getConsultRecordDetail($event,item.docId)">
+      <!--<ion-item ng-repeat="item in items" class="item-thumbnail-left item-text-wrap" ng-click="getConsultRecordDetail($event,item.docId)">
         <img ng-src="{{item.img || 'img/doctor3.PNG'}}">
         <h2>{{item.name}}</h2>
         <p style="text-align: right">{{item.time}}</p>
         <p>{{item.response}}</p>
-      </ion-item>
+      </ion-item>-->
     </ion-list>
 
 

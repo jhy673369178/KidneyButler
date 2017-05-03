@@ -4,7 +4,7 @@
       <button class="button button-icon icon ion-ios-arrow-left fc-ff" ng-click="$ionicGoBack()"></button>
     </ion-nav-buttons>
     <ion-nav-buttons side="right">
-      <span class="button  button-icon" ng-click ="nexttoquestion()">
+      <button class="button  button-icon" ng-click ="nexttoquestion()">
         下一步
       </button>
     </ion-nav-buttons>
@@ -15,7 +15,7 @@
     <div  class="list">
       <ionic-datepicker padding="true" input-obj="datepickerObject4" class="item item-input" style="border: 0;border-bottom: 1px solid #ddd;margin: 0">
         <span class="input-label">
-          <i class="iconfont icon-shijian" style="font-size: 24px;vertical-align: middle;margin-right: 5px"></i>
+          <i class="iconfont icon-shijian" style="font-size: 24px;vertical-align:top;margin-right: 5px"></i>
           慢性肾病首次发病时间
         </span>
         <input  ng-model="Questionare.LastDiseaseTime"  type="text">
@@ -53,6 +53,74 @@
         </span>
       </ionic-datepicker>
       <ion-list>
+        <ion-item style="border: 0;border-bottom: 1px solid #eee;margin:0;">
+            <div>
+              <span>
+                检查
+              </span>
+              <span class="f-fr">
+                <i class="iconfont icon-bianji" style="font-size: 20px">
+                </i>
+                <i class="iconfont icon-del">
+                </i>
+              </span>
+            </div>
+            <p>
+              2014-04-02
+            </p>
+            <p>
+              肾功能异常
+            </p>
+            <div class="health-img-box clearfix">
+              <div class="health-img">
+                <img src="../../../img/mine.jpg" alt="">
+              </div>
+              <div class="health-img">
+                <img src="../../../img/mine.jpg" alt="">
+              </div>
+              <div class="health-img">
+                <img src="../../../img/mine.jpg" alt="">
+              </div>
+              <div class="health-img">
+                <button class="button button-icon icon ion-plus-round" ng-click="addnewimage($event)"></button>
+              </div>
+
+            </div>
+        </ion-item>
+        <ion-item style="border: 0;border-bottom: 1px solid #eee;margin:0;">
+            <div>
+              <span>
+                检查
+              </span>
+              <span class="f-fr">
+                <i class="iconfont icon-bianji" style="font-size: 20px">
+                </i>
+                <i class="iconfont icon-del">
+                </i>
+              </span>
+            </div>
+            <p>
+              2014-04-02
+            </p>
+            <p>
+              肾功能异常
+            </p>
+            <div class="health-img-box clearfix">
+              <div class="health-img">
+                <img src="../../../img/mine.jpg" alt="">
+              </div>
+              <div class="health-img">
+                <img src="../../../img/mine.jpg" alt="">
+              </div>
+              <div class="health-img">
+                <img src="../../../img/mine.jpg" alt="">
+              </div>
+              <div class="health-img">
+                <button class="button button-icon icon ion-plus-round" ng-click="addnewimage($event)"></button>
+              </div>
+
+            </div>
+        </ion-item>
       <ion-item ng-repeat="item in items" ng-click="gotoEditHealth($event,item)" >
         <div class="row">
           <div class="col-25">
@@ -104,9 +172,9 @@
         </div> -->
 
       </ion-item>
-       <div class="col col-20">
+       <!--<div class="col col-20">
           <button class="button button-icon icon ion-plus-round" ng-click="addnewimage($event)"></button>
-      </div>
+      </div>-->
     </ion-list>
 
 

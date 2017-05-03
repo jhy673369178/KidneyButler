@@ -37,13 +37,13 @@
          <div  ng-repeat="filepath in health.imgurl track by $index">
           <img ng-src="{{filepath}}"  name="Photo"  style="height:30%; width:30%"  /><!-- <i class="icon ion-close-circled" style="width: 10%;float: right" ng-click="deleteimg($index)"></i> -->
       </div>
-        <!--  <div>
+          <div>
            <button class="button button-clear" style="color:#666" ng-click="onClickCamera($event)" ><i class="icon ion-camera"></i>上传照片</button>
-         </div> -->
-
+         </div>
+      <button style="margin-top:30px" class="button button-block button-balanced green-bg" >保存</button>
     </ion-item>
     <!-- 上传照片的弹出框 -->
-      <!-- <script id="my-popover.html" type="text/ng-template">
+       <script id="my-popover.html" type="text/ng-template">
         <ion-popover-view>
           <ion-header-bar class="bar-calm">
               <h1 class="title">上传头像</h1>
@@ -63,7 +63,7 @@
           </ion-list>
         </ion-content>
       </ion-popover-view>
-    </script> -->
+    </script>
     <!-- 上传照片的弹出框 -->
   </ion-list>
   </div>

@@ -18,7 +18,9 @@
 .mg-10 {
   margin-top: 10px !important;
 }
-
+.mt-40{
+  margin-top: 40px!important;
+}
 .mg-top-5 {
   margin-top: 5px !important;
 }
@@ -42,7 +44,9 @@
 .mg-right10 {
   margin-right: 10px !important;
 }
-
+.bb{
+  border-bottom: 1px solid #f2f2f2;
+}
 .font-white {
   color: white !important;
   text-align: center;
@@ -187,4 +191,44 @@
    text-align: center!important;
   border: none!important;
 
+}
+
+.schedual-border {
+  border-left:1px solid #6ac4f8;
+  border-top: 1px solid #6ac4f8;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: center;
+}
+.schedual-border-right {
+  border-left:1px solid #6ac4f8;
+  border-top: 1px solid #6ac4f8;
+  border-right: 1px solid #6ac4f8;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: center;
+
+}
+.schedual-border-bottom{
+  border-left:1px solid #6ac4f8;
+  border-top: 1px solid #6ac4f8;
+  border-bottom: 1px solid #6ac4f8;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: center;
+
+}
+.schedual-border-all{
+  border-left:1px solid #6ac4f8;
+  border-top: 1px solid #6ac4f8;
+  border-bottom: 1px solid #6ac4f8;
+  border-right: 1px solid #6ac4f8;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: center;
+
+
+}
+.stats-task .active{
+  background: #6ac4f8;
 }
