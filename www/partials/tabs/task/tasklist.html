@@ -10,18 +10,24 @@
   <div  style="position: absolute;top: 43px;z-index:100;display: block;height: 2.5px;background-color: #33cd5f;{{barwidth}}" ></div>
     <ion-content class="padding">
         <div class="list">
-            <a class="item green-bg font-white" style="border: 0" ng-click="open==true?open=false:open=true" ng-model="open">
+            <a class="item green-bg font-white" style="border: 0;font-size: 14px;border-bottom: 1px solid #fff;margin-bottom: 0" ng-click="open==true?open=false:open=true" ng-model="open">
                 测量<i class="iconfont icon-shang mg-left10"></i>
                 <a class="item item-icon-right" ng-show="!open" ng-repeat="item in Tasks.Measure">
                   <span class="font-33c">{{item.Name}}</span>
                     <p class="mg-top5">{{item.Freq}}</p>
                     <p>{{item.instruction}}</p>
+                  <!--ng-if="item.Name=='血压' || item.Name =='心率'"-->
+                    <div class="task-jd">
+                    <span style="width: 50%">
+
+                    </span>
+                    </div>
                     <i ng-if = "!item.Flag" class="icon iconfont icon-xiugaibi" style="font-size:20px" ng-click = "showPopup(item, 'input')"></i>
                     <i ng-if = "item.Flag" class="icon ion-ios-checkmark-empty"></i>
                 </a>
             </a>
 
-            <a class="item green-bg font-white" style="border: 0">
+            <a class="item green-bg font-white" style="border: 0;margin-top: 0">
                 <label>其它</label><span class="mg-left10 mg-right10">|</span><label ng-click = "openModal()">医生排班表</label><i class="iconfont icon-icondayu"></i>
                 <a class="item item-icon-right" ng-repeat = "item in Tasks.Other">
                     {{item.Name}}

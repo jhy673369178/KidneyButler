@@ -14,14 +14,14 @@
 
     <ion-list>
       <ion-item class="item-thumbnail-left" ng-click="getDoctorDetail($event,doctor.userId)">
-        <img style="border-radius: 100%" ng-src="{{doctor.photoUrl  || 'img/doctor3.PNG'}}">
-        <span>{{doctor.name}}</span>
+        <img style="border-radius: 100%;top: 50%;margin-top: -40px" ng-src="{{doctor.photoUrl  || 'img/doctor3.PNG'}}">
+        <span style="font-weight: bold">{{doctor.name}}</span>
         <span style="float: right">{{doctor.department}}</span>
         <p>{{doctor.workUnit}}  {{doctor.title}}</p>
         <p style="font-size: 12px">擅长：{{doctor.major}}</p>
         <p style="font-size: 12px">收费：<span>咨询{{doctor.charge1}}元一答</span><span style="margin-left: 10px">问诊{{doctor.charge2}}元一次</span></p>
         <div class="row" style="font-size: 14px">
-            <div class="col"><span class="font-c">评分:{{doctor.score}}</span></div>
+            <div class="col"><span class="font-c">评&nbsp;&nbsp;&nbsp;&nbsp;分：&nbsp;{{doctor.score}}</span></div>
             <div class="col" ><span  class="font-c">咨询量：{{doctor.count1}}</span></div>
             <div class="col" > <span class="font-c">问诊量：{{doctor.count2}}</span></div>
 

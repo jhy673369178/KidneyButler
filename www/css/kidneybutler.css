@@ -232,3 +232,13 @@
 .stats-task .active{
   background: #6ac4f8;
 }
+.task-jd{
+  width: 50%;
+  height: 15px;
+  background: #cccccc;
+}
+.task-jd span{
+  display: block;
+  background: #5de6a2;
+  height: 100%;
+}
